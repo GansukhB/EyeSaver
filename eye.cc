@@ -14,7 +14,7 @@ int main ()
   for (;;)
   {
     system("notify-send -t 0 \"Залуу нүдээ амраагаач ээ!!!\"");
-    wait(15);
+    for(int i = 0; i < 9; i++) wait(400);
   }
   return 0;
 }
