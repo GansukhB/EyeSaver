@@ -11,12 +11,10 @@ void wait ( int seconds )
 int main ()
 {
   int n;
-  printf ("Starting countdown...\n");
   for (;;)
   {
-    system("notify-send \"Залуу нүдээ амраагаач ээ!!!\"");
-    wait(60*60);
+    system("notify-send -t 0 \"Залуу нүдээ амраагаач ээ!!!\"");
+    wait(15);
   }
-  printf ("FIRE!!!\n");
   return 0;
 }
